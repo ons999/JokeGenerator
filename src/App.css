@@ -1,0 +1,142 @@
+/* Background with a dark gradient */
+.app-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 99px;
+  background: linear-gradient(45deg, #728471, #2b4763, #54610507);
+}
+
+/* Card styling with neon glow */
+.joke-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 183, 255, 0.3);
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid rgba(0, 183, 255, 0.5);
+}
+.button-group{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/* Glowing Button with Neon Effect */
+.joke-btn {
+  background: transparent;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff;
+}
+
+.joke-btn:hover {
+  box-shadow: 0 0 30px #00b7ff, 0 0 40px #00b7ff;
+  transform: scale(1.01);
+  background-color: #2893be;
+}
+
+/* Glowing joke text */
+.joke-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 183, 255, 0.7);
+}
+
+/* Footer Styling */
+.app-footer {
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 3px 3px 10px rgba(186, 6, 6, 0.5);
+}
+
+/* Header Styling */
+.app-header {
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 183, 255, 0.7);
+}
+
+/* Styling for selected text */
+::selection {
+  background: #00b7ff;
+  color: #fff;
+}
+
+/* Styling for Playback Speed Slider */
+.speed-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.speed-control .form-control-range {
+  width: 200px;
+}
+/* Styling the slider */
+.slider-btn {
+  -webkit-appearance: none;
+  width: 200px;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #00b7ff, #2893be);
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* Styling the slider thumb (the part you slide) */
+.slider-btn::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00b7ff;
+  border: 2px solid #00b7ff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+/* Slider thumb hover effect */
+.slider-btn::-webkit-slider-thumb:hover {
+  background: #2893be;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.8);
+}
+
+/* For Firefox */
+.slider-btn::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00b7ff;
+  border: 2px solid #00b7ff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.5);
+}
+
+/* For Edge */
+.slider-btn::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #00b7ff;
+  border: 2px solid #00b7ff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 183, 255, 0.5);
+}
